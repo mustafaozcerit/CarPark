@@ -1,0 +1,923 @@
+2021-07-12 10:03:26.280 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:03:26.880 +03:00 [INF] Now listening on: http://localhost:5001
+2021-07-12 10:03:26.883 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:03:26.884 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:03:26.886 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:04:00.905 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:04:01.510 +03:00 [INF] Now listening on: http://localhost:5001
+2021-07-12 10:04:01.512 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:04:01.513 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:04:01.514 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:04:54.916 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:04:55.473 +03:00 [INF] Now listening on: http://localhost:5001
+2021-07-12 10:04:55.480 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:04:55.481 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:04:55.483 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:05:22.390 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:05:22.924 +03:00 [WRN] Unable to bind to http://localhost:5000 on the IPv4 loopback interface: 'Erişim izinlerince izin verilmeyen bir şekilde bir yuvaya erişilmeye çalışıldı.'.
+2021-07-12 10:05:22.928 +03:00 [WRN] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'Erişim izinlerince izin verilmeyen bir şekilde bir yuvaya erişilmeye çalışıldı.'.
+2021-07-12 10:05:22.931 +03:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://localhost:5000.
+ ---> System.AggregateException: One or more errors occurred. (Erişim izinlerince izin verilmeyen bir şekilde bir yuvaya erişilmeye çalışıldı.) (Erişim izinlerince izin verilmeyen bir şekilde bir yuvaya erişilmeye çalışıldı.)
+ ---> System.Net.Sockets.SocketException (10013): Erişim izinlerince izin verilmeyen bir şekilde bir yuvaya erişilmeye çalışıldı.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): Erişim izinlerince izin verilmeyen bir şekilde bir yuvaya erişilmeye çalışıldı.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2021-07-12 10:06:43.425 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:06:43.906 +03:00 [INF] Now listening on: http://localhost:5001
+2021-07-12 10:06:43.908 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:06:43.910 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:06:43.911 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:07:55.880 +03:00 [INF] Application is shutting down...
+2021-07-12 10:10:42.929 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:10:43.328 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:10:43.328 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:10:43.328 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:10:43.384 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 10:10:43.415 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:10:43.494 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 10:10:46.916 +03:00 [ERR] Bu ilk logum
+2021-07-12 10:10:46.944 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 10:10:47.139 +03:00 [INF] Executed ViewResult - view Index executed in 199.6996ms.
+2021-07-12 10:10:47.143 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 3648.0626ms
+2021-07-12 10:10:47.144 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:10:47.151 +03:00 [INF] Request finished in 3771.0214ms 200 text/html; charset=utf-8
+2021-07-12 10:10:47.175 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/css/site.css  
+2021-07-12 10:10:47.175 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2021-07-12 10:10:47.175 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+2021-07-12 10:10:47.177 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/lib/jquery/dist/jquery.min.js  
+2021-07-12 10:10:47.177 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/lib/bootstrap/dist/css/bootstrap.min.css  
+2021-07-12 10:10:47.209 +03:00 [INF] The file /js/site.js was not modified
+2021-07-12 10:10:47.209 +03:00 [INF] The file /css/site.css was not modified
+2021-07-12 10:10:47.209 +03:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2021-07-12 10:10:47.209 +03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2021-07-12 10:10:47.209 +03:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2021-07-12 10:10:47.212 +03:00 [INF] Request finished in 36.4124ms 304 text/css
+2021-07-12 10:10:47.212 +03:00 [INF] Request finished in 36.7084ms 304 application/javascript
+2021-07-12 10:10:47.212 +03:00 [INF] Request finished in 36.8367ms 304 application/javascript
+2021-07-12 10:10:47.212 +03:00 [INF] Request finished in 35.3292ms 304 application/javascript
+2021-07-12 10:10:47.212 +03:00 [INF] Request finished in 37.08ms 304 text/css
+2021-07-12 10:17:08.965 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:17:09.648 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:17:09.649 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:17:09.649 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:17:09.785 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 10:17:09.846 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:17:09.992 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 10:17:19.631 +03:00 [ERR] Bu ilk logum
+2021-07-12 10:17:19.664 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 10:17:19.823 +03:00 [INF] Executed ViewResult - view Index executed in 165.9299ms.
+2021-07-12 10:17:19.828 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 9834.446ms
+2021-07-12 10:17:19.829 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:17:19.835 +03:00 [INF] Request finished in 10059.5267ms 200 text/html; charset=utf-8
+2021-07-12 10:22:41.566 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:22:42.069 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:22:42.070 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:22:42.070 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:22:42.130 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 10:22:42.169 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:22:42.246 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 10:22:42.256 +03:00 [ERR] Customer'de bir hata oluştu {"Id":1,"NameSurname":"Mustafa OZCERIT","Age":24,"$type":"Customer"}
+2021-07-12 10:22:42.330 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 10:22:42.548 +03:00 [INF] Executed ViewResult - view Index executed in 221.6917ms.
+2021-07-12 10:22:42.552 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 305.311ms
+2021-07-12 10:22:42.553 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:22:42.562 +03:00 [INF] Request finished in 437.634ms 200 text/html; charset=utf-8
+2021-07-12 10:26:37.758 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:26:38.203 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:26:38.203 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:26:38.203 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:26:38.250 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 10:26:38.280 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:26:38.346 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 10:26:38.357 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 10:26:38.397 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 10:26:38.575 +03:00 [INF] Executed ViewResult - view Index executed in 182.5829ms.
+2021-07-12 10:26:38.577 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 230.3055ms
+2021-07-12 10:26:38.579 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:26:38.585 +03:00 [INF] Request finished in 339.2846ms 200 text/html; charset=utf-8
+2021-07-12 10:29:28.783 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:29:29.356 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:29:29.357 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:29:29.357 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:29:29.419 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 10:29:29.456 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:29:29.546 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 10:29:29.560 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 10:29:29.610 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 10:29:29.849 +03:00 [INF] Executed ViewResult - view Index executed in 242.3131ms.
+2021-07-12 10:29:29.855 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 308.0056ms
+2021-07-12 10:29:29.856 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:29:29.877 +03:00 [INF] Request finished in 455.6491ms 200 text/html; charset=utf-8
+2021-07-12 10:32:33.530 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 10:32:34.068 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 10:32:34.069 +03:00 [INF] Hosting environment: Development
+2021-07-12 10:32:34.069 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 10:32:34.113 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 10:32:34.147 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:32:34.221 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 10:32:34.232 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 10:32:34.282 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 10:32:34.510 +03:00 [INF] Executed ViewResult - view Index executed in 232.9118ms.
+2021-07-12 10:32:34.513 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 290.7317ms
+2021-07-12 10:32:34.514 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 10:32:34.520 +03:00 [INF] Request finished in 411.1163ms 200 text/html; charset=utf-8
+2021-07-12 13:48:23.335 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 13:48:23.949 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 13:48:23.949 +03:00 [INF] Hosting environment: Development
+2021-07-12 13:48:23.949 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 13:48:23.999 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 13:48:24.057 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 13:48:24.121 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 13:49:54.763 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 13:49:55.214 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 13:49:55.215 +03:00 [INF] Hosting environment: Development
+2021-07-12 13:49:55.215 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 13:49:55.294 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 13:49:55.432 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 13:49:55.602 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 13:50:41.697 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 13:50:41.726 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 13:50:41.837 +03:00 [INF] Executed ViewResult - view Index executed in 115.2912ms.
+2021-07-12 13:50:41.839 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 46236.4425ms
+2021-07-12 13:50:41.840 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 13:50:41.844 +03:00 [INF] Request finished in 46561.4089ms 200 text/html; charset=utf-8
+2021-07-12 13:52:25.939 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 13:52:26.535 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 13:52:26.535 +03:00 [INF] Hosting environment: Development
+2021-07-12 13:52:26.535 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 13:52:26.577 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 13:52:26.627 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 13:52:26.692 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 13:52:49.466 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 13:52:49.977 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 13:52:49.979 +03:00 [INF] Hosting environment: Development
+2021-07-12 13:52:49.979 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 13:52:50.026 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 13:52:50.084 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 13:52:50.156 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 13:53:05.539 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 13:53:57.606 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 13:53:58.027 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 13:53:58.028 +03:00 [INF] Hosting environment: Development
+2021-07-12 13:53:58.028 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 13:53:58.071 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 13:53:58.120 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 13:53:58.176 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 13:54:05.714 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 13:54:05.750 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 13:54:05.879 +03:00 [INF] Executed ViewResult - view Index executed in 133.9887ms.
+2021-07-12 13:54:05.881 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 7704.3112ms
+2021-07-12 13:54:05.882 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 13:54:05.887 +03:00 [INF] Request finished in 7821.4835ms 200 text/html; charset=utf-8
+2021-07-12 14:03:34.952 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:03:35.412 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:03:35.412 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:03:35.412 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:03:35.461 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:03:35.526 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:03:35.598 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:03:39.633 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:03:41.769 +03:00 [INF] Executing endpoint 'CarPark.User.Resources.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:03:41.775 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Resources.Controllers.UserController (CarPark.User).
+2021-07-12 14:04:55.577 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:04:55.999 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:04:56.000 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:04:56.000 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:04:56.048 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:04:56.113 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:04:56.192 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:05:00.976 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:05:01.019 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:05:01.193 +03:00 [INF] Executed ViewResult - view Index executed in 177.4646ms.
+2021-07-12 14:05:01.196 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 5003.1169ms
+2021-07-12 14:05:01.197 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:05:01.202 +03:00 [INF] Request finished in 5159.846ms 200 text/html; charset=utf-8
+2021-07-12 14:05:08.455 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:05:08.459 +03:00 [INF] Executing endpoint 'CarPark.User.Resources.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:05:08.485 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Resources.Controllers.UserController (CarPark.User).
+2021-07-12 14:07:03.501 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:07:03.946 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:07:03.946 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:07:03.947 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:07:03.994 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:07:04.043 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:07:04.111 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:07:05.641 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:07:05.703 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:07:05.930 +03:00 [INF] Executed ViewResult - view Index executed in 239.0659ms.
+2021-07-12 14:07:05.937 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 1825.4578ms
+2021-07-12 14:07:05.940 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:07:05.949 +03:00 [INF] Request finished in 1958.7354ms 200 text/html; charset=utf-8
+2021-07-12 14:07:12.833 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:07:12.838 +03:00 [INF] Executing endpoint 'CarPark.User.Resources.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:07:12.842 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Resources.Controllers.UserController (CarPark.User).
+2021-07-12 14:10:52.796 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:10:53.232 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:10:53.232 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:10:53.232 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:10:53.277 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:10:53.336 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:10:53.404 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:10:57.615 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:10:57.645 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:10:57.770 +03:00 [INF] Executed ViewResult - view Index executed in 129.1495ms.
+2021-07-12 14:10:57.772 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 4366.9472ms
+2021-07-12 14:10:57.773 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:10:57.778 +03:00 [INF] Request finished in 4506.7277ms 200 text/html; charset=utf-8
+2021-07-12 14:11:07.110 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:11:07.114 +03:00 [INF] Executing endpoint 'CarPark.User.Resources.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:11:07.116 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Resources.Controllers.UserController (CarPark.User).
+2021-07-12 14:12:31.537 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:12:31.942 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:12:31.943 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:12:31.943 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:12:31.982 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:12:32.026 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:12:32.084 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:12:32.107 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:12:32.150 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:12:32.283 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:12:32.290 +03:00 [INF] Executing endpoint 'CarPark.User.Resources.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:12:32.291 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Resources.Controllers.UserController (CarPark.User).
+2021-07-12 14:13:15.318 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:13:15.864 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:13:15.864 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:13:15.864 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:13:15.915 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:13:15.979 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:13:16.044 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:13:16.070 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:13:16.119 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:13:16.262 +03:00 [INF] Executed ViewResult - view Index executed in 149.7267ms.
+2021-07-12 14:13:16.264 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 219.3744ms
+2021-07-12 14:13:16.265 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:13:16.271 +03:00 [INF] Request finished in 360.5381ms 200 text/html; charset=utf-8
+2021-07-12 14:13:58.296 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:13:58.301 +03:00 [INF] Executing endpoint 'CarPark.User.Resources.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:13:58.303 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Resources.Controllers.UserController (CarPark.User).
+2021-07-12 14:16:29.516 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:16:29.927 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:16:29.928 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:16:29.928 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:16:29.975 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:16:30.031 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:16:30.107 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:16:30.138 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:16:30.177 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:16:30.336 +03:00 [INF] Executed ViewResult - view Index executed in 164.0748ms.
+2021-07-12 14:16:30.338 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 230.1975ms
+2021-07-12 14:16:30.339 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:16:30.344 +03:00 [INF] Request finished in 375.6379ms 200 text/html; charset=utf-8
+2021-07-12 14:16:35.910 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:16:35.914 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:16:35.918 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:16:35.920 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:16:35.925 +03:00 [ERR] The view 'Index' was not found. Searched locations: ["/Views/User/Index.cshtml","/Views/Shared/Index.cshtml"]
+2021-07-12 14:16:35.931 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Index (CarPark.User) in 12.6206ms
+2021-07-12 14:16:35.931 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:16:35.934 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/User/Index.cshtml
+/Views/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-12 14:16:36.008 +03:00 [INF] Request finished in 99.2985ms 500 text/html; charset=utf-8
+2021-07-12 14:16:49.037 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:16:49.040 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:16:49.040 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:18:08.200 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:18:08.658 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:18:08.658 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:18:08.658 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:18:08.708 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:18:08.775 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:18:08.842 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:18:08.878 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:18:08.926 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:18:09.088 +03:00 [INF] Executed ViewResult - view Index executed in 170.8677ms.
+2021-07-12 14:18:09.091 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 248.3712ms
+2021-07-12 14:18:09.092 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:18:09.097 +03:00 [INF] Request finished in 397.8672ms 200 text/html; charset=utf-8
+2021-07-12 14:18:10.138 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/favicon.ico  
+2021-07-12 14:18:10.146 +03:00 [INF] The file /favicon.ico was not modified
+2021-07-12 14:18:10.149 +03:00 [INF] Request finished in 11.6889ms 304 image/x-icon
+2021-07-12 14:18:20.587 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:18:20.591 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:18:20.597 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:18:25.712 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:18:25.717 +03:00 [ERR] The view 'Index' was not found. Searched locations: ["/Views/User/Index.cshtml","/Views/Shared/Index.cshtml"]
+2021-07-12 14:18:25.727 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Index (CarPark.User) in 5129.5484ms
+2021-07-12 14:18:25.728 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:18:25.734 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/User/Index.cshtml
+/Views/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-12 14:18:25.808 +03:00 [INF] Request finished in 5222.1317ms 500 text/html; charset=utf-8
+2021-07-12 14:21:52.885 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:21:53.322 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:21:53.322 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:21:53.322 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:21:53.366 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:21:53.420 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:21:53.482 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:21:53.510 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:21:53.548 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:21:53.721 +03:00 [INF] Executed ViewResult - view Index executed in 179.1426ms.
+2021-07-12 14:21:53.725 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 241.4099ms
+2021-07-12 14:21:53.727 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:21:53.732 +03:00 [INF] Request finished in 372.2501ms 200 text/html; charset=utf-8
+2021-07-12 14:21:54.801 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:21:54.813 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:21:54.820 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:21:54.824 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:21:54.932 +03:00 [INF] Executed ViewResult - view Create executed in 109.5734ms.
+2021-07-12 14:21:54.932 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 111.7819ms
+2021-07-12 14:21:54.932 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:21:54.933 +03:00 [INF] Request finished in 133.0288ms 200 text/html; charset=utf-8
+2021-07-12 14:21:54.972 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/lib/jquery-validation/dist/jquery.validate.min.js  
+2021-07-12 14:21:54.972 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js  
+2021-07-12 14:21:55.063 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\musta\source\repos\CarPark\CarPark.User\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'
+2021-07-12 14:21:55.063 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Users\musta\source\repos\CarPark\CarPark.User\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2021-07-12 14:21:55.063 +03:00 [INF] Request finished in 91.7404ms 200 application/javascript
+2021-07-12 14:21:55.063 +03:00 [INF] Request finished in 91.7062ms 200 application/javascript
+2021-07-12 14:28:47.465 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:28:47.993 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:28:47.993 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:28:47.993 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:28:48.043 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:28:48.109 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:28:48.179 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:28:48.218 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:28:48.271 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:28:48.452 +03:00 [INF] Executed ViewResult - view Index executed in 190.3647ms.
+2021-07-12 14:28:48.456 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 276.0167ms
+2021-07-12 14:28:48.457 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:28:48.464 +03:00 [INF] Request finished in 428.0374ms 200 text/html; charset=utf-8
+2021-07-12 14:28:54.505 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/index  
+2021-07-12 14:28:54.510 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:28:54.513 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:28:54.516 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:28:54.523 +03:00 [ERR] The view 'Index' was not found. Searched locations: ["/Views/User/Index.cshtml","/Views/Shared/Index.cshtml"]
+2021-07-12 14:28:54.530 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Index (CarPark.User) in 16.2367ms
+2021-07-12 14:28:54.531 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:28:54.534 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/User/Index.cshtml
+/Views/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-12 14:28:54.615 +03:00 [INF] Request finished in 111.2456ms 500 text/html; charset=utf-8
+2021-07-12 14:29:02.454 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:29:02.459 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:29:02.462 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:29:02.464 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:29:02.524 +03:00 [INF] Executed ViewResult - view Create executed in 60.6766ms.
+2021-07-12 14:29:02.529 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 65.9872ms
+2021-07-12 14:29:02.529 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:29:02.529 +03:00 [INF] Request finished in 75.8401ms 200 text/html; charset=utf-8
+2021-07-12 14:30:16.226 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:30:16.696 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:30:16.697 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:30:16.697 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:30:16.747 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:30:16.806 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:30:16.871 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:30:16.898 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:30:16.938 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:30:17.106 +03:00 [INF] Executed ViewResult - view Index executed in 178.9799ms.
+2021-07-12 14:30:17.108 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 237.1329ms
+2021-07-12 14:30:17.109 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:30:17.114 +03:00 [INF] Request finished in 371.0414ms 200 text/html; charset=utf-8
+2021-07-12 14:30:21.059 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:30:21.064 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:30:21.066 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:30:21.069 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:30:21.132 +03:00 [INF] Executed ViewResult - view Create executed in 65.2657ms.
+2021-07-12 14:30:21.139 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 67.4856ms
+2021-07-12 14:30:21.139 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:30:21.140 +03:00 [INF] Request finished in 81.2741ms 200 text/html; charset=utf-8
+2021-07-12 14:30:52.053 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:30:52.501 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:30:52.501 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:30:52.501 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:30:52.545 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:30:52.608 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:30:52.670 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:30:52.701 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:30:52.737 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:30:52.915 +03:00 [INF] Executed ViewResult - view Index executed in 182.7191ms.
+2021-07-12 14:30:52.918 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 246.604ms
+2021-07-12 14:30:52.919 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:30:52.926 +03:00 [INF] Request finished in 385.1388ms 200 text/html; charset=utf-8
+2021-07-12 14:30:55.497 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:30:55.503 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:30:55.505 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:30:55.507 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:30:55.558 +03:00 [INF] Executed ViewResult - view Create executed in 52.1877ms.
+2021-07-12 14:30:55.558 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 53.1122ms
+2021-07-12 14:30:55.559 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:30:55.559 +03:00 [INF] Request finished in 62.435ms 200 text/html; charset=utf-8
+2021-07-12 14:31:40.721 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:31:41.187 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:31:41.187 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:31:41.187 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:31:41.233 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:31:41.294 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:31:41.362 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:31:41.389 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:31:41.418 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:31:41.576 +03:00 [INF] Executed ViewResult - view Index executed in 161.1016ms.
+2021-07-12 14:31:41.581 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 218.4023ms
+2021-07-12 14:31:41.584 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:31:41.590 +03:00 [INF] Request finished in 362.4677ms 200 text/html; charset=utf-8
+2021-07-12 14:31:45.626 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:31:45.630 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:31:45.636 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:31:45.638 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:31:45.704 +03:00 [INF] Executed ViewResult - view Create executed in 67.4116ms.
+2021-07-12 14:31:45.705 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 68.8213ms
+2021-07-12 14:31:45.705 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:31:45.705 +03:00 [INF] Request finished in 80.0601ms 200 text/html; charset=utf-8
+2021-07-12 14:31:50.195 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/User  
+2021-07-12 14:31:50.197 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:31:50.200 +03:00 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:31:50.202 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:31:50.211 +03:00 [ERR] The view 'Index' was not found. Searched locations: ["/Views/User/Index.cshtml","/Views/Shared/Index.cshtml","/Pages/Shared/Index.cshtml"]
+2021-07-12 14:31:50.219 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Index (CarPark.User) in 18.7921ms
+2021-07-12 14:31:50.221 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Index (CarPark.User)'
+2021-07-12 14:31:50.224 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/User/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-12 14:31:50.307 +03:00 [INF] Request finished in 112.7835ms 500 text/html; charset=utf-8
+2021-07-12 14:31:51.205 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:31:51.207 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:31:51.208 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:31:51.210 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:31:51.214 +03:00 [INF] Executed ViewResult - view Create executed in 4.7089ms.
+2021-07-12 14:31:51.214 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 5.7918ms
+2021-07-12 14:31:51.215 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:31:51.215 +03:00 [INF] Request finished in 10.3561ms 200 text/html; charset=utf-8
+2021-07-12 14:33:39.571 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:33:39.989 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:33:39.989 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:33:39.990 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:33:40.035 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:33:40.035 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:33:40.111 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:33:40.111 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:33:40.169 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:33:40.169 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:33:40.221 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:33:40.208 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:33:40.225 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:33:40.348 +03:00 [INF] Executed ViewResult - view Index executed in 117.1163ms.
+2021-07-12 14:33:40.350 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 180.5497ms
+2021-07-12 14:33:40.351 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:33:40.356 +03:00 [INF] Request finished in 324.9479ms 200 text/html; charset=utf-8
+2021-07-12 14:33:40.400 +03:00 [INF] Executed ViewResult - view Create executed in 217.5455ms.
+2021-07-12 14:33:40.400 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 230.9149ms
+2021-07-12 14:33:40.400 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:33:40.402 +03:00 [INF] Request finished in 371.9275ms 200 text/html; charset=utf-8
+2021-07-12 14:34:23.979 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:34:24.545 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:34:24.546 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:34:24.546 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:34:24.627 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:34:24.722 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:34:24.860 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:34:24.897 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:34:24.952 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:34:25.225 +03:00 [INF] Executed ViewResult - view Index executed in 286.6761ms.
+2021-07-12 14:34:25.228 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 367.1112ms
+2021-07-12 14:34:25.230 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:34:25.247 +03:00 [INF] Request finished in 622.6697ms 200 text/html; charset=utf-8
+2021-07-12 14:34:25.729 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:34:25.741 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:34:25.753 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:34:25.769 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:34:25.938 +03:00 [INF] Executed ViewResult - view Create executed in 181.4535ms.
+2021-07-12 14:34:25.939 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 184.8577ms
+2021-07-12 14:34:25.939 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:34:25.939 +03:00 [INF] Request finished in 213.8197ms 200 text/html; charset=utf-8
+2021-07-12 14:34:39.419 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create?culture=en-US  
+2021-07-12 14:34:39.422 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:34:39.423 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:34:39.424 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:34:39.428 +03:00 [INF] Executed ViewResult - view Create executed in 4.5813ms.
+2021-07-12 14:34:39.429 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 5.8122ms
+2021-07-12 14:34:39.429 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:34:39.429 +03:00 [INF] Request finished in 10.2472ms 200 text/html; charset=utf-8
+2021-07-12 14:37:30.554 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:37:30.977 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:37:30.977 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:37:30.977 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:37:31.022 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:37:31.084 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:37:31.147 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:37:31.174 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:37:31.201 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:37:31.350 +03:00 [INF] Executed ViewResult - view Index executed in 154.079ms.
+2021-07-12 14:37:31.353 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 205.5798ms
+2021-07-12 14:37:31.354 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:37:31.359 +03:00 [INF] Request finished in 340.6639ms 200 text/html; charset=utf-8
+2021-07-12 14:37:37.023 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:37:37.029 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:37:37.031 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:37:37.033 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:37:37.085 +03:00 [INF] Executed ViewResult - view Create executed in 52.9009ms.
+2021-07-12 14:37:37.085 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 53.9797ms
+2021-07-12 14:37:37.085 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:37:37.086 +03:00 [INF] Request finished in 62.6968ms 200 text/html; charset=utf-8
+2021-07-12 14:37:44.993 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create?culture=en-US  
+2021-07-12 14:37:44.997 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:37:44.998 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:37:44.999 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:37:45.011 +03:00 [INF] Executed ViewResult - view Create executed in 12.162ms.
+2021-07-12 14:37:45.011 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 13.0154ms
+2021-07-12 14:37:45.011 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:37:45.012 +03:00 [INF] Request finished in 19.0806ms 200 text/html; charset=utf-8
+2021-07-12 14:43:24.192 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:43:24.820 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:43:24.820 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:43:24.820 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:43:24.862 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:43:24.925 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:43:24.999 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:43:25.031 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:43:25.061 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:43:25.224 +03:00 [INF] Executed ViewResult - view Index executed in 166.6285ms.
+2021-07-12 14:43:25.227 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 226.5137ms
+2021-07-12 14:43:25.228 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:43:25.232 +03:00 [INF] Request finished in 374.6894ms 200 text/html; charset=utf-8
+2021-07-12 14:43:29.102 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:43:29.107 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:43:29.111 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:43:29.113 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:43:29.171 +03:00 [INF] Executed ViewResult - view Create executed in 59.0153ms.
+2021-07-12 14:43:29.171 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 60.243ms
+2021-07-12 14:43:29.171 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:43:29.172 +03:00 [INF] Request finished in 70.9719ms 200 text/html; charset=utf-8
+2021-07-12 14:44:16.006 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:44:16.496 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:44:16.496 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:44:16.497 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:44:16.536 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:44:16.598 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:44:16.676 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:44:16.702 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:44:16.730 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:44:16.879 +03:00 [INF] Executed ViewResult - view Index executed in 154.9346ms.
+2021-07-12 14:44:16.882 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 205.1262ms
+2021-07-12 14:44:16.883 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:44:16.889 +03:00 [INF] Request finished in 357.3781ms 200 text/html; charset=utf-8
+2021-07-12 14:44:22.150 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:44:22.159 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:44:22.163 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:44:22.167 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:44:22.248 +03:00 [INF] Executed ViewResult - view Create executed in 82.5095ms.
+2021-07-12 14:44:22.248 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 84.5229ms
+2021-07-12 14:44:22.248 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:44:22.248 +03:00 [INF] Request finished in 99.0649ms 200 text/html; charset=utf-8
+2021-07-12 14:44:25.604 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create?culture=en-US  
+2021-07-12 14:44:25.607 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:44:25.608 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:44:25.609 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:44:25.614 +03:00 [INF] Executed ViewResult - view Create executed in 5.3972ms.
+2021-07-12 14:44:25.614 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 6.319ms
+2021-07-12 14:44:25.614 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:44:25.614 +03:00 [INF] Request finished in 11.079ms 200 text/html; charset=utf-8
+2021-07-12 14:44:31.690 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:44:31.691 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:44:31.692 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:44:31.694 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:44:31.700 +03:00 [INF] Executed ViewResult - view Create executed in 6.0454ms.
+2021-07-12 14:44:31.704 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 10.6249ms
+2021-07-12 14:44:31.704 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:44:31.704 +03:00 [INF] Request finished in 14.4384ms 200 text/html; charset=utf-8
+2021-07-12 14:45:14.683 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 14:45:15.170 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 14:45:15.171 +03:00 [INF] Hosting environment: Development
+2021-07-12 14:45:15.171 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 14:45:15.221 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:45:15.221 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 14:45:15.324 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:45:15.324 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:45:15.391 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:45:15.391 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 14:45:15.435 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:45:15.422 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 14:45:15.438 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 14:45:15.576 +03:00 [INF] Executed ViewResult - view Index executed in 132.1704ms.
+2021-07-12 14:45:15.579 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 187.5451ms
+2021-07-12 14:45:15.580 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 14:45:15.585 +03:00 [INF] Request finished in 368.8011ms 200 text/html; charset=utf-8
+2021-07-12 14:45:15.635 +03:00 [INF] Executed ViewResult - view Create executed in 228.5646ms.
+2021-07-12 14:45:15.636 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 244.3398ms
+2021-07-12 14:45:15.636 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:45:15.636 +03:00 [INF] Request finished in 420.1912ms 200 text/html; charset=utf-8
+2021-07-12 14:45:24.895 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create?culture=en-US  
+2021-07-12 14:45:24.900 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:45:24.900 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:45:24.901 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:45:24.906 +03:00 [INF] Executed ViewResult - view Create executed in 4.5947ms.
+2021-07-12 14:45:24.906 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 5.2939ms
+2021-07-12 14:45:24.906 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:45:24.906 +03:00 [INF] Request finished in 11.7253ms 200 text/html; charset=utf-8
+2021-07-12 14:45:29.293 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 14:45:29.296 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:45:29.298 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 14:45:29.300 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 14:45:29.304 +03:00 [INF] Executed ViewResult - view Create executed in 3.9545ms.
+2021-07-12 14:45:29.304 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 5.3412ms
+2021-07-12 14:45:29.304 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 14:45:29.304 +03:00 [INF] Request finished in 11.9073ms 200 text/html; charset=utf-8
+2021-07-12 15:00:37.619 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 15:00:38.281 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 15:00:38.281 +03:00 [INF] Hosting environment: Development
+2021-07-12 15:00:38.281 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 15:00:38.333 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 15:00:38.407 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:00:38.487 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:00:38.519 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:00:38.560 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:00:38.733 +03:00 [INF] Executed ViewResult - view Index executed in 184.4387ms.
+2021-07-12 15:00:38.736 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 248.3041ms
+2021-07-12 15:00:38.737 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:00:38.743 +03:00 [INF] Request finished in 415.1296ms 200 text/html; charset=utf-8
+2021-07-12 15:39:40.459 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 15:39:41.213 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 15:39:41.214 +03:00 [INF] Hosting environment: Development
+2021-07-12 15:39:41.214 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 15:39:41.272 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 15:39:41.365 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:39:41.461 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:39:41.502 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:39:41.546 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:39:41.746 +03:00 [INF] Executed ViewResult - view Index executed in 211.3201ms.
+2021-07-12 15:39:41.750 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 288.1473ms
+2021-07-12 15:39:41.751 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:39:41.759 +03:00 [INF] Request finished in 492.7395ms 200 text/html; charset=utf-8
+2021-07-12 15:39:43.950 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/contact/index  
+2021-07-12 15:39:43.954 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:39:43.957 +03:00 [INF] Route matched with {action = "Index", controller = "Contact"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.ContactController (CarPark.User).
+2021-07-12 15:39:43.959 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:39:43.971 +03:00 [INF] Executed ViewResult - view Index executed in 12.575ms.
+2021-07-12 15:39:43.975 +03:00 [INF] Executed action CarPark.User.Controllers.ContactController.Index (CarPark.User) in 18.3759ms
+2021-07-12 15:39:43.976 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:39:43.976 +03:00 [INF] Request finished in 26.7065ms 200 text/html; charset=utf-8
+2021-07-12 15:39:55.049 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/contact/index?culture=en-US  
+2021-07-12 15:39:55.052 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:39:55.053 +03:00 [INF] Route matched with {action = "Index", controller = "Contact"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.ContactController (CarPark.User).
+2021-07-12 15:39:55.054 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:39:55.056 +03:00 [INF] Executed ViewResult - view Index executed in 2.8576ms.
+2021-07-12 15:39:55.057 +03:00 [INF] Executed action CarPark.User.Controllers.ContactController.Index (CarPark.User) in 4.0311ms
+2021-07-12 15:39:55.057 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:39:55.059 +03:00 [INF] Request finished in 9.6992ms 200 text/html; charset=utf-8
+2021-07-12 15:48:36.920 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 15:48:37.464 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 15:48:37.465 +03:00 [INF] Hosting environment: Development
+2021-07-12 15:48:37.465 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 15:48:37.508 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 15:48:37.577 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:48:37.649 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:48:37.677 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:48:37.708 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:48:37.859 +03:00 [INF] Executed ViewResult - view Index executed in 158.502ms.
+2021-07-12 15:48:37.862 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 212.3741ms
+2021-07-12 15:48:37.863 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:48:37.867 +03:00 [INF] Request finished in 363.8744ms 200 text/html; charset=utf-8
+2021-07-12 15:48:44.600 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 15:48:44.606 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 15:48:44.616 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 15:48:44.619 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 15:48:44.680 +03:00 [INF] Executed ViewResult - view Create executed in 62.2688ms.
+2021-07-12 15:48:44.683 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 67.0795ms
+2021-07-12 15:48:44.683 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 15:48:44.684 +03:00 [INF] Request finished in 84.6409ms 200 text/html; charset=utf-8
+2021-07-12 15:48:45.335 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create  
+2021-07-12 15:48:45.338 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 15:48:45.338 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 15:48:45.339 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 15:48:45.343 +03:00 [INF] Executed ViewResult - view Create executed in 3.7825ms.
+2021-07-12 15:48:45.343 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 4.3762ms
+2021-07-12 15:48:45.343 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 15:48:45.343 +03:00 [INF] Request finished in 8.4414ms 200 text/html; charset=utf-8
+2021-07-12 15:49:18.448 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/user/create?culture=en-US  
+2021-07-12 15:49:18.450 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 15:49:18.451 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2021-07-12 15:49:18.452 +03:00 [INF] Executing ViewResult, running view Create.
+2021-07-12 15:49:18.456 +03:00 [INF] Executed ViewResult - view Create executed in 4.9305ms.
+2021-07-12 15:49:18.457 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 5.6661ms
+2021-07-12 15:49:18.457 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2021-07-12 15:49:18.457 +03:00 [INF] Request finished in 9.6079ms 200 text/html; charset=utf-8
+2021-07-12 15:52:53.642 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 15:52:54.217 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 15:52:54.217 +03:00 [INF] Hosting environment: Development
+2021-07-12 15:52:54.217 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 15:52:54.289 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/contact/index  
+2021-07-12 15:52:54.289 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 15:52:54.411 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:52:54.411 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:52:54.515 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:52:54.515 +03:00 [INF] Route matched with {action = "Index", controller = "Contact"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.ContactController (CarPark.User).
+2021-07-12 15:53:01.825 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:53:01.837 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:53:01.837 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:53:01.933 +03:00 [INF] Executed ViewResult - view Index executed in 94.0161ms.
+2021-07-12 15:53:01.933 +03:00 [INF] Executed ViewResult - view Index executed in 106.7701ms.
+2021-07-12 15:53:01.934 +03:00 [INF] Executed action CarPark.User.Controllers.ContactController.Index (CarPark.User) in 7418.0632ms
+2021-07-12 15:53:01.934 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 7418.0617ms
+2021-07-12 15:53:01.935 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:53:01.935 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:53:01.938 +03:00 [INF] Request finished in 7657.785ms 200 text/html; charset=utf-8
+2021-07-12 15:53:01.938 +03:00 [INF] Request finished in 7657.8082ms 200 text/html; charset=utf-8
+2021-07-12 15:53:09.201 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/contact/index?culture=en-US  
+2021-07-12 15:53:09.204 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:53:09.204 +03:00 [INF] Route matched with {action = "Index", controller = "Contact"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.ContactController (CarPark.User).
+2021-07-12 15:53:13.734 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:53:13.736 +03:00 [INF] Executed ViewResult - view Index executed in 4.4088ms.
+2021-07-12 15:53:13.737 +03:00 [INF] Executed action CarPark.User.Controllers.ContactController.Index (CarPark.User) in 4532.4324ms
+2021-07-12 15:53:13.737 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:53:13.737 +03:00 [INF] Request finished in 4536.1372ms 200 text/html; charset=utf-8
+2021-07-12 15:54:40.344 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 15:54:40.784 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 15:54:40.785 +03:00 [INF] Hosting environment: Development
+2021-07-12 15:54:40.786 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 15:54:40.829 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 15:54:40.893 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:54:40.962 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:54:40.989 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:54:41.023 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:54:41.192 +03:00 [INF] Executed ViewResult - view Index executed in 178.1394ms.
+2021-07-12 15:54:41.194 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 231.4928ms
+2021-07-12 15:54:41.195 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:54:41.201 +03:00 [INF] Request finished in 375.9613ms 200 text/html; charset=utf-8
+2021-07-12 15:54:45.304 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/contact/index  
+2021-07-12 15:54:45.308 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:54:45.313 +03:00 [INF] Route matched with {action = "Index", controller = "Contact"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.ContactController (CarPark.User).
+2021-07-12 15:54:48.719 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:54:48.727 +03:00 [INF] Executed ViewResult - view Index executed in 8.669ms.
+2021-07-12 15:54:48.730 +03:00 [INF] Executed action CarPark.User.Controllers.ContactController.Index (CarPark.User) in 3416.9956ms
+2021-07-12 15:54:48.730 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.ContactController.Index (CarPark.User)'
+2021-07-12 15:54:48.730 +03:00 [INF] Request finished in 3427.6452ms 200 text/html; charset=utf-8
+2021-07-12 15:54:58.729 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/home/index  
+2021-07-12 15:54:58.732 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:54:58.733 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:54:58.734 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:54:58.734 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:54:58.736 +03:00 [INF] Executed ViewResult - view Index executed in 1.7132ms.
+2021-07-12 15:54:58.736 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 2.4535ms
+2021-07-12 15:54:58.736 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:54:58.736 +03:00 [INF] Request finished in 7.0781ms 200 text/html; charset=utf-8
+2021-07-12 15:55:04.546 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 15:55:04.548 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:55:04.548 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:55:04.549 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:55:04.549 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:55:04.551 +03:00 [INF] Executed ViewResult - view Index executed in 2.104ms.
+2021-07-12 15:55:04.551 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 3.2151ms
+2021-07-12 15:55:04.551 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:55:04.552 +03:00 [INF] Request finished in 5.9092ms 200 text/html; charset=utf-8
+2021-07-12 15:55:21.809 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/?culture=en-US  
+2021-07-12 15:55:21.812 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:55:21.812 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:55:21.813 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:55:21.813 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:55:21.815 +03:00 [INF] Executed ViewResult - view Index executed in 1.8232ms.
+2021-07-12 15:55:21.815 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 2.5857ms
+2021-07-12 15:55:21.815 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:55:21.815 +03:00 [INF] Request finished in 5.7783ms 200 text/html; charset=utf-8
+2021-07-12 15:55:33.191 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 15:55:33.192 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:55:33.193 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:55:33.194 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:55:33.195 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:55:33.198 +03:00 [INF] Executed ViewResult - view Index executed in 3.6167ms.
+2021-07-12 15:55:33.199 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 5.2296ms
+2021-07-12 15:55:33.199 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:55:33.199 +03:00 [INF] Request finished in 8.5616ms 200 text/html; charset=utf-8
+2021-07-12 15:55:43.692 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/?culture=tr-TR  
+2021-07-12 15:55:43.693 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:55:43.693 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:55:43.694 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:55:43.694 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:55:43.697 +03:00 [INF] Executed ViewResult - view Index executed in 2.5743ms.
+2021-07-12 15:55:43.697 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 3.4804ms
+2021-07-12 15:55:43.697 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:55:43.697 +03:00 [INF] Request finished in 5.4348ms 200 text/html; charset=utf-8
+2021-07-12 15:56:25.694 +03:00 [INF] User profile is available. Using 'C:\Users\musta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-07-12 15:56:26.076 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-12 15:56:26.076 +03:00 [INF] Hosting environment: Development
+2021-07-12 15:56:26.076 +03:00 [INF] Content root path: C:\Users\musta\source\repos\CarPark\CarPark.User
+2021-07-12 15:56:26.113 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/  
+2021-07-12 15:56:26.168 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:56:26.235 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:56:26.252 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:56:26.278 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:56:26.416 +03:00 [INF] Executed ViewResult - view Index executed in 144.7239ms.
+2021-07-12 15:56:26.419 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 182.8527ms
+2021-07-12 15:56:26.419 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:56:26.425 +03:00 [INF] Request finished in 315.4441ms 200 text/html; charset=utf-8
+2021-07-12 15:56:41.125 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44329/?culture=en-US  
+2021-07-12 15:56:41.127 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:56:41.128 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2021-07-12 15:56:41.135 +03:00 [ERR] Customer'de bir hata oluştu {"Id":2,"NameSurname":"Mustafa OZCERIT","Age":28,"$type":"Customer"}
+2021-07-12 15:56:41.136 +03:00 [INF] Executing ViewResult, running view Index.
+2021-07-12 15:56:41.140 +03:00 [INF] Executed ViewResult - view Index executed in 4.9743ms.
+2021-07-12 15:56:41.143 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 14.9985ms
+2021-07-12 15:56:41.143 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2021-07-12 15:56:41.143 +03:00 [INF] Request finished in 18.3694ms 200 text/html; charset=utf-8
