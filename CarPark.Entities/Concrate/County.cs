@@ -6,10 +6,8 @@ using System.Text;
 
 namespace CarPark.Entities.Concrate
 {
-    public class County
+    public class County:BaseModel
     {
-        [BsonId]
-        public ObjectId Id { get; set; }
         public string Name { get; set; }
 
         public string Latitude { get; set; }

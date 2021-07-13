@@ -6,9 +6,9 @@ using System.Text;
 
 namespace CarPark.Entities.Concrate
 {
-   public class WorkingDay : BaseModel
+  public  class BaseModel
     {
-        public ICollection<Translation> Translation { get; set; }
-        public ICollection<WorkingHour> WorkingHours { get; set; }
+        [BsonId]
+        public ObjectId Id { get; set; }
     }
 }

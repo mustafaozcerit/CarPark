@@ -6,10 +6,8 @@ using System.Text;
 
 namespace CarPark.Entities.Concrate
 {
-    public class CarPark
+    public class CarPark:BaseModel
     {
-        [BsonId]
-        public ObjectId Id { get; set; }
         public string Name { get; set; }
         public string[] PhoneNumbers { get; set; }
         public Address Address { get; set; }

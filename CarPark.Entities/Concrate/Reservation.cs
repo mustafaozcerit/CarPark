@@ -6,10 +6,8 @@ using System.Text;
 
 namespace CarPark.Entities.Concrate
 {
-    public class Reservation
+    public class Reservation:BaseModel
     {
-        [BsonId]
-        public ObjectId MyProperty { get; set; }
         public string ImagePath { get; set; }
         public string Plate { get; set; }
         public DateTime BeginDate { get; set; }
