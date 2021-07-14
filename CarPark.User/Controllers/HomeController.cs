@@ -1,9 +1,11 @@
-﻿using CarPark.User.Models;
+﻿using CarPark.Entities.Concrate;
+using CarPark.User.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -21,16 +23,52 @@ namespace CarPark.User.Controllers
 
         private readonly IStringLocalizer<HomeController> _localizer;
 
+        private readonly MongoClientSettings settings;
+
         public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer)
         {
             _logger = logger;
             _localizer = localizer;
+            settings  = MongoClientSettings.FromConnectionString("mongodb+srv://sa:Root64@carparkcluster.efzqx.mongodb.net/CarParkDB?retryWrites=true&w=majority");
         }
 
         public IActionResult Index()
         {
+            var client = new MongoClient(settings);
+            var database = client.GetDatabase("CarParkDB");
 
             var say_Hello_value = _localizer["Say_Hello"];
+
+
+            var jsonString = System.IO.File.ReadAllText("cities.json");
+            var cities = JsonConvert.DeserializeObject<List<cities>>(jsonString);
+
+            var citiesCollection = database.GetCollection<City>("City");
+
+            foreach (var item in cities)
+            {
+                var city = new City()
+                {
+                    Id = ObjectId.GenerateNewId(),
+                    Name = item.name,
+                    Plate = item.plate,
+                    Latitude = item.latitude,
+                    Longitude = item.longitude,
+                    Counties = new List<County>()
+                };
+                foreach (var item2 in item.counties)
+                {
+                    city.Counties.Add(new County
+                    {
+                        Id=ObjectId.GenerateNewId(),
+                        Name=item2,
+                        Latitude="",
+                        PostCode="",
+                        Longitude="",
+                    });
+                }
+                citiesCollection.InsertOne(city);
+            }
 
             //var cultureInfo = CultureInfo.GetCultureInfo("en-US");
             //Thread.CurrentThread.CurrentCulture = cultureInfo;
@@ -45,10 +83,9 @@ namespace CarPark.User.Controllers
                 Age = 28
             };
             _logger.LogError("Customer'de bir hata oluştu {@customer}",customer);
-            //var settings = MongoClientSettings.FromConnectionString("mongodb+srv://sa:Root64@carparkcluster.efzqx.mongodb.net/CarParkDB?retryWrites=true&w=majority");
-            //var client = new MongoClient(settings);
-            //var database = client.GetDatabase("CarParkDB");
 
+            //var settings = MongoClientSettings.FromConnectionString("mongodb+srv://sa:Root64@carparkcluster.efzqx.mongodb.net/CarParkDB?retryWrites=true&w=majority");
+ 
 
             //var collection = database.GetCollection<Test>("Test");
             //var test = new Test()
